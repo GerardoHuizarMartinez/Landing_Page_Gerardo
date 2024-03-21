@@ -1,0 +1,171 @@
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    max-width: 100%;
+}
+
+h1{
+    color: white;
+    font-family: cursive;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 8PX;
+    align-items: center;
+    display: flex;
+}
+
+.main-header{
+    background-color: gray;
+    width: 70vw;
+    height: min-content;
+    padding: 8px;
+    margin-top: 35vh;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    img{
+        max-width: 150px;
+        border-radius: 100%;
+    }
+    
+    .text{
+        max-width: 70%;
+        text-align: justify;
+        font-size: 1.4vw;
+        color: rgb(255, 255, 255);
+        word-break: break-all;
+    }
+
+}
+
+.remark{
+    color: green;
+}
+
+//------------------------------------------------------------
+
+.containerProjects{
+    width: 70vw;
+    //background-color: purple;
+    padding: 8px;   
+
+
+    &__containerInformation{       
+        display: flex;
+        flex-direction: row;
+        border: 3px solid black; 
+        margin-top: 16px;
+        margin-bottom: 16px;
+        &__containerImage{
+                        
+            &__cardImage{
+                width: 20vw;
+              //  background-color: black;
+                justify-content: center;
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+
+                &>img{
+                    border-radius: 15px;
+                    width: 100px;
+                    display: flex;
+                }
+            }
+    
+        }
+
+
+        &__cardAboutProject{
+
+            //background-color: turquoise;
+            width: 50vw;
+            
+
+        &__Enterprise{
+            
+            &>h3{
+                color: #ed2626;
+                font-size: 2rem;
+                font-family: consolas;
+                margin: 0;
+                padding: 16px;
+            }
+            
+        }
+
+        &__Tech{
+            display: flex;
+            flex-direction: row;
+            //background-color: yellow;
+            justify-content: space-around;
+            padding: 8px;
+        }
+
+        &__description{
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            //background-color: brown;
+            padding: 16px
+        }
+
+        }
+    }
+    
+
+
+}
+
+//------------------------------------------------------------
+.containerKnowledge{
+    width: 70vw;
+    padding: 8px;
+
+    &__Header{
+        display: flex;
+        background-color: gold;
+    }
+
+    &__cardKnowledge{
+        background-color: goldenrod;
+        padding: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        &__card_informative{
+            background-color: #312d2dc2;
+            color: white;
+            height: 50px;
+            width: 150px;
+            display: flex;
+            border-radius: 8px;
+            align-items: center;
+            padding-left: 8px;
+            gap: 8px;
+            margin-right: 32px;
+            //margin-bottom: 16px;
+            margin: 0 0 16px 16px;
+        }
+
+    }
+
+
+}
+
+.containerHabilities{
+    width: 70vw;
+
+    // &.containerHabilities>h1{
+    //     color:white;
+    //     text-align: left;
+    //     font-size: 2rem;
+    // }
+}
+
