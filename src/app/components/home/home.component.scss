@@ -1,0 +1,357 @@
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    max-width: 100%;
+}
+
+h1 {
+    color: white;
+    font-family: cursive;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 8px;
+    align-items: center;
+    display: flex;
+    margin-top: 4rem;
+    // background-color: gold;
+}
+
+/*
+
+
+#fourth>.border:nth-of-type(1){
+    top:0;
+    left:0;
+    width:0;
+    height:0;
+    border-top:1px solid white;
+  }
+  
+  #fourth>.border:nth-of-type(2){
+    top:0;
+    right:0;
+    width:10px;
+    height:0;
+    border-right:1px solid white;
+  }
+  
+  #fourth>.border:nth-of-type(3){
+    bottom:0;
+    right:0;
+    width:0;
+    height:0;
+    border-bottom:1px solid white;
+  }
+  
+  #fourth>.border:nth-of-type(4){
+    bottom:0;
+    left:0;
+    width:0;
+    height:0;
+    border-left:1px solid white;
+  }
+  
+  #fourth:hover .border:nth-of-type(1){
+    width:100%;
+  }
+  
+  #fourth:hover .border:nth-of-type(2){
+    height:80px;
+  }
+  
+  #fourth:hover .border:nth-of-type(3){
+    width:100%;
+  }
+  
+  #fourth:hover .border:nth-of-type(4){
+    height:80px;
+  }
+  
+
+.btn6{
+    border:1px solid transparent; 
+     -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+  }
+  
+  .btn6::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom:0px;
+    z-index:-1;
+    width: 0%;
+    height:1px;
+    background: #6098FF;
+    box-shadow: inset 0px 0px 0px #6098FF;
+    display: block;
+    -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+  }
+  
+  .btn6:hover::before {
+    width:100%;
+  }
+  
+  .btn6::after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    top:0px;
+    z-index:-1;
+    width: 0%;
+    height:1px;
+    background: #6098FF;
+    -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+  }
+  .btn6:hover::after {
+    width:100%;
+  }
+  .btn6:hover{
+    border-left:1px solid #6098FF;
+    border-right:1px solid #6098FF;
+  }
+*/
+
+//------------------------------------------------------------ ABOUT ME
+
+
+.main-header {
+    //background-color: gray;
+    width: var(--vw-width);
+    height: var(--vh-height);
+    height: min-content;
+    padding: 8px;
+    margin-top: 25vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    img {
+        max-width: 150px;
+        border-radius: 100%;
+    }
+
+    .text {
+        max-width: 70%;
+        text-align: justify;
+        font-size: 1.4vw;
+        color: rgb(255, 255, 255);
+        word-break: break-all;
+    }
+
+}
+
+.remark {
+    color: green;
+}
+
+//------------------------------------------------------------ PROJECTS
+
+.containerProjects {
+    width: 60vw;
+    padding: 8px;
+
+
+    &__containerInformation {
+        display: flex;
+        flex-direction: row;
+        border: 3px solid black;
+        padding: 16px;
+        margin-top: 3rem;
+
+        &__containerImage {
+
+            &__cardImage {
+                width: 45vw;
+                background-color: black;
+                padding: 16px;
+                align-items: center;
+                display: flex;
+                border-radius: 16px;
+
+                &>img {
+                    //border-radius: 15px;
+                    width: 100%;
+                    min-width: 150px;
+                    //transform: rotate(-25deg);
+                    // display: inline-block;
+                }
+            }
+
+        }
+
+
+        &__cardAboutProject {
+            width: 60vw;
+            justify-content: center;
+            padding: 16px;
+
+            &>h3 {
+                color: #ed2626;
+                font-size: 2rem;
+                font-family: consolas;
+                margin: 0;
+                padding: 16px;
+            }
+
+            &__description {
+                color: white;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                //background-color: brown;
+                text-align: justify;
+                padding: 16px;
+
+                &__techTool {
+                    display: flex;
+                    flex-direction: row;
+                    width: max-content;
+                    justify-content: space-between;
+                    gap: 5px;
+                }
+            }
+
+            &__options{
+                display: flex;
+                flex-direction: row;
+                //background-color: yellow;
+                justify-content: space-around;
+                padding: 8px;
+
+                &>button {
+                    background-color: #474040e5;
+                    color: white;
+                    padding: 16px;
+                    border: none;
+                    border-radius: 12px;
+                    width: 45%;
+                    min-width: 100px;
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    font-weight: bolder;
+                    //font-size: 1rem;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                }
+
+            }
+
+        }
+    }
+
+
+
+}
+
+//------------------------------------------------------------ KNOWLEDGE
+.containerKnowledge {
+    width: var(--vw-width);
+    height: var(--vh-height);
+    padding: 8px;
+   //    background-color: yellowgreen;
+
+
+    &__cardKnowledge {
+        //background-color: goldenrod;
+        padding: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &__card_informative {
+            background-color: #312d2dc2;
+            color: white;
+            height: 50px;
+            width: 150px;
+            display: flex;
+            border-radius: 8px;
+            align-items: center;
+            padding: 0 0 0 8px;
+            gap: 16px;
+            margin: 0 0 8px 8px;
+            cursor: pointer;
+        }
+
+    }
+
+
+}
+
+
+//------------------------------------------------------------ CONTACT ME
+.containerContactme {
+    width: var(--vw-width);
+    height: var(--vh-height);
+    padding: 8px;
+    //background-color: brown;
+
+     &__EmailFormat{
+        display: flex; 
+        flex-direction: row;
+        align-items: center; 
+        justify-content: space-around;
+
+        &>button{
+            background-color: rgb(58, 87, 110);
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 100px;
+            height: 60px;
+            padding: 16px;
+            border-radius: 16px;
+            border: gray solid 2px ;
+
+            
+        }
+
+        &__inputFormat{
+          color: white;
+          width: 50%;
+          height: 2em;
+          font-size: 1.5em;
+          padding: 8px;
+          border: rgb(184, 184, 184) solid 2px;;
+          border-radius: 8px;
+          background-color: rgb(73, 74, 78);
+
+          &::selection{
+            color: black;
+            background-color: white;
+            height: 50px;
+          }
+
+          &:focus{
+            outline: none;
+          }
+
+        }
+
+    }
+
+
+}
+
+//------------------------------------------------------------ DOWNLOAD MY CV
+.containerDownloadCv {
+    width: var(--vw-width);
+    height: var(--vh-height);
+    padding: 8px;
+    background-color: palevioletred;
+}
+
+.pruebiwis {
+    background-color: #1e1e31;
+    padding: 9px;
+    border-radius: 100%;
+    align-items: center;
+    display: flex;
+}
