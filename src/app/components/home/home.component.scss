@@ -131,7 +131,8 @@ h1 {
 .container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    margin-top: 3rem;
 
     img {
         max-width: 150px;
@@ -139,11 +140,13 @@ h1 {
     }
 
     .text {
-        max-width: 70%;
-        text-align: justify;
-        font-size: 1.4vw;
-        color: rgb(255, 255, 255);
-        word-break: break-all;
+      max-width: 70%;
+      text-align: justify;
+      font-size: 1.4vw;
+      padding: 8px;
+      color: rgb(255, 255, 255);
+      line-height: normal;
+      letter-spacing: normal;
     }
 
 }
@@ -155,14 +158,14 @@ h1 {
 //------------------------------------------------------------ PROJECTS
 
 .containerProjects {
-    width: 60vw;
+    width: var(--vw-width);
     padding: 8px;
 
 
     &__containerInformation {
         display: flex;
         flex-direction: row;
-        border: 3px solid black;
+        //border: 3px solid black;
         padding: 16px;
         margin-top: 3rem;
 
@@ -190,6 +193,8 @@ h1 {
 
         &__cardAboutProject {
             width: 60vw;
+            display: flex;
+            flex-direction: column;
             justify-content: center;
             padding: 16px;
 
@@ -213,7 +218,7 @@ h1 {
                     flex-direction: row;
                     width: max-content;
                     justify-content: space-between;
-                    gap: 5px;
+                    gap: 8px;
                 }
             }
 
@@ -256,7 +261,7 @@ h1 {
     width: var(--vw-width);
     height: var(--vh-height);
     padding: 8px;
-   //    background-color: yellowgreen;
+   //  background-color: yellowgreen;
 
 
     &__cardKnowledge {
@@ -270,7 +275,7 @@ h1 {
             background-color: #312d2dc2;
             color: white;
             height: 50px;
-            width: 150px;
+            width: 200px;
             display: flex;
             border-radius: 8px;
             align-items: center;
@@ -293,6 +298,15 @@ h1 {
     padding: 8px;
     //background-color: brown;
 
+    &__otherNetworks{
+      width: 100%;
+      display: flex;
+      //background-color: white;
+      padding: 16px;
+      justify-content: space-evenly;
+
+    }
+
      &__EmailFormat{
         display: flex; 
         flex-direction: row;
@@ -300,7 +314,7 @@ h1 {
         justify-content: space-around;
 
         &>button{
-            background-color: rgb(58, 87, 110);
+            background-color: rgb(67, 149, 216);
             color: white;
             border: none;
             cursor: pointer;
@@ -308,7 +322,7 @@ h1 {
             height: 60px;
             padding: 16px;
             border-radius: 16px;
-            border: gray solid 2px ;
+            border: gray solid 1px ;
 
             
         }
@@ -325,7 +339,7 @@ h1 {
 
           &::selection{
             color: black;
-            background-color: white;
+             background-color: white;
             height: 50px;
           }
 
@@ -338,6 +352,7 @@ h1 {
     }
 
 
+
 }
 
 //------------------------------------------------------------ DOWNLOAD MY CV
@@ -345,13 +360,52 @@ h1 {
     width: var(--vw-width);
     height: var(--vh-height);
     padding: 8px;
-    background-color: palevioletred;
+    //background-color: rgba(235, 201, 212, 0.226);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+    &__download{
+      width: 100%;
+      flex-direction: row;
+      display: flex;
+      justify-content: center;
+
+      button{
+
+        width: 70%;
+        background-color: rgb(67, 149, 216);
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
+        border-radius: 16px;
+        border: gray solid 1px ;
+      
+        &:focus{
+          outline: none;
+        }
+      }
+    }
+  
+
 }
 
 .pruebiwis {
-    background-color: #1e1e31;
-    padding: 9px;
-    border-radius: 100%;
-    align-items: center;
-    display: flex;
+  background-color: #1e1e31;
+  padding: 12px;
+  border-radius: 100%;
+  align-items: center;
+  display: flex;
 }
+
+
+.pruebiwis:hover{
+  scale: (1.2);
+  transition: ease 0.2s;
+  gap: 8px;
+  background-color: #2f2f46             ;
+}
+
+
+// BOTONES CON ANIMACIONES
