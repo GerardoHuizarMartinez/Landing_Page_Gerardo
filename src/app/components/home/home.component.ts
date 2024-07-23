@@ -7,6 +7,7 @@ import { AsyncPipe } from '@angular/common';
 import { Work } from './home.interface';
 import { Firestore, collection, collectionData } from '@angular/fire/firestore';
 
+
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -15,9 +16,9 @@ import { Firestore, collection, collectionData } from '@angular/fire/firestore';
   styleUrl: './home.component.scss',
 })
 export class HomeComponent {
-  M19 = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDUtlt4GM53xlD5M2XeB7sCr8iGy8SWLCkTkJ-0QSQKg&s';
-  Anm = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk-HGmuh88HFS0hPB8FLTQevcrbMNVBvahlY_AiT_2UA&s';
-  Wallet = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO98HsRIiNS0eoY07ExplTfPj8yntHvx_qFjn2bmTp_g&s';
+  //M19 = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDUtlt4GM53xlD5M2XeB7sCr8iGy8SWLCkTkJ-0QSQKg&s';
+  //Anm = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk-HGmuh88HFS0hPB8FLTQevcrbMNVBvahlY_AiT_2UA&s';
+  //Wallet = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO98HsRIiNS0eoY07ExplTfPj8yntHvx_qFjn2bmTp_g&s';
 
   private _workService = inject(HomeService)
   firestore: Firestore = inject(Firestore);
@@ -38,6 +39,9 @@ export class HomeComponent {
     console.log("hiciste click en el boton " + name + " y la aplicación es: " + aplica )
   }
   
+    moveOn(){
+    }
+
     getWorksEvaluation(){
       this._workService.getworks().subscribe(
         res=>{

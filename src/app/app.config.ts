@@ -8,7 +8,10 @@ import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideRouter(routes),  provideFirebaseApp(() => initializeApp({ 
+
+    provideRouter(routes),  
+    
+    provideFirebaseApp(() => initializeApp({ 
       projectId: 'landingpagegerardo',
       appId: '1:854917038623:web:7cc8e9cb54f9a75f200b2a',
       storageBucket: 'landingpagegerardo.appspot.com',
